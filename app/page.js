@@ -1,19 +1,18 @@
 
 import "./style.css";
-import React, { Fragment } from "react";
-import {SwipeCarousel} from "../components/Slider"
-
+import React, { Fragment} from "react";
 import ProductPlacement from "@/components/ProductPlacement";
+import { cookies } from 'next/headers'
+import Login from "@/components/Login";
 
-
-// Because this is an inframe, so the SSR mode doesn't not do well here.
-// It will work on real devices.
-const App = () => {
+export default  function App() {
+  const cookieStore = cookies()
+  const login = cookieStore.get('login')
+  if(!login) return <Login/>
   return (
     <Fragment>
-      <SwipeCarousel/>
       <ProductPlacement/>
     </Fragment>
   );
 };
-export default App;
+
