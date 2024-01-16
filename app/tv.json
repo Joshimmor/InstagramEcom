@@ -3,26 +3,50 @@
         {
             "channelName":"Fox",
             "logoPath":"/Fox.jpg",
-            "id":347,
-            "stream":"https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8"
+            "id":1,
+            "stream":"http://ky-iptv.com:80/live/29GgR9q4/h4P4keVA/1846754.m3u8"
         },
         {
             "channelName":"AMC",
             "logoPath":"/amc.jpg",
-            "id":759,
-            "stream":"https://bcovlive-a.akamaihd.net/ba853de442c140b7b3dc020001597c0a/us-east-1/6245817279001/playlist.m3u8"
+            "id":2,
+            "stream":"http://ky-iptv.com:80/live/29GgR9q4/h4P4keVA/175787.m3u8"
         },
         {
-            "channelName":"ESPN",
-            "logoPath":"/ESPN.webp",
-            "id":44,
-            "stream":"https://dlhd.sx/cast/stream-44.php"
+            "channelName":"MLB",
+            "logoPath":"/mlb.png",
+            "id":3,
+            "stream":"http://ky-iptv.com:80/live/29GgR9q4/h4P4keVA/176144.m3u8"
         },
         {
             "channelName":"TruTv",
             "logoPath":"/TruTv.webp",
-            "id":341,
+            "id":4,
             "stream":"https://turnerlive.warnermediacdn.com/hls/live/2023176/trueast/slate/VIDEO_0_3564000.m3u8"
+        },
+        {
+            "channelName":"NBA",
+            "logoPath":"/nba.webp",
+            "id":5,
+            "stream":"http://ky-iptv.com:80/live/29GgR9q4/h4P4keVA/395217.m3u8"
+        },
+        {
+            "channelName":"Discovery",
+            "logoPath":"/discovery.jpg",
+            "id":6,
+            "stream":"http://ky-iptv.com:80/live/29GgR9q4/h4P4keVA/175826.m3u8"
+        },
+        {
+            "channelName":"ESPN",
+            "logoPath":"/ESPN.webp",
+            "id":7,
+            "stream":"http://ky-iptv.com:80/live/29GgR9q4/h4P4keVA/220406.m3u8"
+        },
+        {
+            "channelName":"History",
+            "logoPath":"/history.png",
+            "id":8,
+            "stream":"http://ky-iptv.com:80/live/29GgR9q4/h4P4keVA/175878.m3u8"
         }
       ]
 }
