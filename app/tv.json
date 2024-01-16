@@ -1,0 +1,28 @@
+{
+    "channels":[
+        {
+            "channelName":"Fox",
+            "logoPath":"/Fox.jpg",
+            "id":347,
+            "stream":"https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8"
+        },
+        {
+            "channelName":"AMC",
+            "logoPath":"/amc.jpg",
+            "id":759,
+            "stream":"https://bcovlive-a.akamaihd.net/ba853de442c140b7b3dc020001597c0a/us-east-1/6245817279001/playlist.m3u8"
+        },
+        {
+            "channelName":"ESPN",
+            "logoPath":"/ESPN.webp",
+            "id":44,
+            "stream":"https://dlhd.sx/cast/stream-44.php"
+        },
+        {
+            "channelName":"TruTv",
+            "logoPath":"/TruTv.webp",
+            "id":341,
+            "stream":"https://turnerlive.warnermediacdn.com/hls/live/2023176/trueast/slate/VIDEO_0_3564000.m3u8"
+        }
+      ]
+}
