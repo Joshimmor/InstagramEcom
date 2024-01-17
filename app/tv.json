@@ -20,7 +20,7 @@
         },
         {
             "channelName":"TruTv",
-            "logoPath":"/TruTv.webp",
+            "logoPath":"/trutv.webp",
             "id":4,
             "stream":"https://turnerlive.warnermediacdn.com/hls/live/2023176/trueast/slate/VIDEO_0_3564000.m3u8"
         },
