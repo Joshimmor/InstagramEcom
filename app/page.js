@@ -7,11 +7,11 @@ import Login from "@/components/Login";
 
 export default  function App() {
   const cookieStore = cookies()
-  const login = cookieStore.get('login')
+  const login = cookieStore.get('grandpatv')
   if(!login) return <Login/>
   return (
     <Fragment>
-      <ProductPlacement/>
+      <ProductPlacement userid={login.value}/>
     </Fragment>
   );
 };

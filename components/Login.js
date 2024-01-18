@@ -11,12 +11,16 @@ export default function Login() {
             password: "vi"
         }
     ]
-    function validateUser(){
-        for(let i = 0; i < users.length;i++){
-            if(users[i].username == username && users[i].password == password ){
-            create("dfsadfasgaerhqhhwrh654gre64gweg84we6g1reg98w1gr6ew1ge8gr16erg1e8g6e1rge96g1e6g48e6gr1e86g1eg6eg8s6g46rse4gs6g41rs6g4s4g8461sg1s6g84s6g1s96g1sg1s6g4s8g61sg")
-            }
+    async function validateUser(){
+        const response = await fetch("/api/users",{
+            method:'POST',
+            body: JSON.stringify({username:username,password:password})
+        })
+        if(response.ok){
+            let user = await response.json()
+            create(user.id)
         }
+
         return
     }
     

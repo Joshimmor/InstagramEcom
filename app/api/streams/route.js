@@ -1,0 +1,18 @@
+import { PrismaClient } from "@prisma/client";
+import { NextResponse } from "next/server";
+const prisma = new PrismaClient();
+export async function GET(req,res){
+    if(req.method != 'GET'){ return NextResponse.json({message:"method not allowed"})}
+    let channelid = await req.url.split("=")[1]
+    let foundChannel = await prisma.channel.findFirst({
+        where:{
+            id: channelid
+        },
+        select:{
+            link:true
+        }
+    })
+   
+     if(!foundChannel){ return  NextResponse.error()}
+     return NextResponse.json(foundChannel)
+}
