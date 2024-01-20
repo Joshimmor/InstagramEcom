@@ -1,6 +1,6 @@
 
 import "./style.css";
-import React, { Fragment} from "react";
+import React, {Fragment} from "react";
 import ProductPlacement from "@/components/ProductPlacement";
 import { cookies } from 'next/headers'
 import Login from "@/components/Login";

@@ -3,13 +3,13 @@ import { NextResponse } from "next/server";
 const prisma = new PrismaClient();
 export async function GET(req,res){
     if(req.method != 'GET'){ return NextResponse.json({message:"method not allowed"})}
-    let channelid = await req.url.split("=")[1]
-    let foundChannel = await prisma.channel.findFirst({
+    let channel = await req.url.split("=")[1]
+    channel.includes("%20") ? channel = channel.replace(/%20/g,' ') : null
+    let foundChannel = await prisma.channel.findMany({
         where:{
-            id: Number(channelid)
-        },
-        select:{
-            link:true
+            channelName:{
+                contains: channel
+            }
         }
     })
    

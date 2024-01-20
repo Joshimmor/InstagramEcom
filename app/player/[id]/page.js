@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import ReactPlayer from 'react-player'
-import TvConfig from "../../tv.json"
 import Link from "next/link"
 
 

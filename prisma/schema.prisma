@@ -17,14 +17,14 @@ model user {
 }
 
 model channel{
-  id String @id @default(cuid())
+  id  Int  @id @default(autoincrement())
   channelName String
-  link String 
+  link String
   artwork String
 }
 
 model subscriptions{
   id String @id @default(cuid())
   userid String
-  channelid String
+  channelid Int
 }
