@@ -34,9 +34,9 @@ const ChannelModal = ({ isOpen, onClose,userid,subbedChannels}) => {
       <div className="bg-white p-6 rounded-lg z-10 w-3/4 flex flex-col items-center ">
             <div className="flex items-center w-full ">   
                 <div className="relative w-full">
-                    <input type="text" onChange={handleChange} onKeyDown={handlePress}  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-2 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Channel name" />
+                    <input type="text" onChange={handleChange} onKeyDown={handlePress}  className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-2 p-2.5 " placeholder="Search Channel name" />
                 </div>
-                <button  onClick={()=>searchForChannel(textInput)}className="p-3 ms-2 text-sm font-medium rounded text-white bg-indigo-600 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                <button  onClick={()=>searchForChannel(textInput)}className="p-3 ms-2 text-sm font-medium rounded text-white bg-gray-700 font-semibold leading-6 text-white shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">
                     <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                     </svg>
