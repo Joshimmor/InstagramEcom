@@ -21,7 +21,7 @@ export default  function ProductPlacement({userid}) {
   
   return (
     <div className="h-full min-h-screen bg-gradient-to-b from-neutral-100 to-slate-200">
-      <div className="pb-[10vh] grid grid-cols-2  md:grid-cols-4 gap-2  justify justify-items-center  items-center">
+      <div className="pb-[20vh] grid grid-cols-2  md:grid-cols-4 gap-2  justify justify-items-center  items-center">
           {channels.map((n,i)=>{
               return <Products key={i} id={n.id} logo={n.artwork} name={n.channelName} stream={n.link}/>
           })}
