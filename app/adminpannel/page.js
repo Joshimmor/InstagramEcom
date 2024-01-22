@@ -2,7 +2,7 @@
 import React,{useEffect,useState} from 'react'
 
 
-export default function page() {
+export default function Page() {
     let [admin,setAdmin] = useState()
     let [users,setUsers] = useState([])
     let [isOpen,setModal] = useState(false)
